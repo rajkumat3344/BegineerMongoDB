@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/students")
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:3000")
 public class StudentController {
 
     @Autowired //Autowiring feature of spring framework enables you to inject the object dependency implicitly. It internally uses setter or constructor injection.

@@ -33,8 +33,8 @@ public class BegineerMongoDbApplication {
 					"Dutta",
 					"rdutta@gmail.com",
 					Gender.MALE,
-					new Address("India", "828122", "Sindri"),
-					List.of("Kafka", "React JS", "Spring Boot", "Java"),
+					new Address("India", "828122", "DHN"),
+					List.of("Appworks", "React JS", "Java", "AWS", "Spring Boot", "Mongo DB"),
 					BigDecimal.TEN,
 					LocalDateTime.now()
 			);
