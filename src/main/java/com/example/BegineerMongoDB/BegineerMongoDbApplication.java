@@ -4,10 +4,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+
+
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -20,18 +21,20 @@ public class BegineerMongoDbApplication {
 		SpringApplication.run(BegineerMongoDbApplication.class, args);
 	}
 
+
 	@Bean
 	CommandLineRunner runner(StudentRepository repository , MongoTemplate mongoTemplate){
 		return args -> {
-			String firstName = "Radhu";
+
+			String firstName = "Raj";
 
 			Student student = new Student(
 					firstName,
-					"Code",
-					"rcode@gmail.com",
+					"Dutta",
+					"rdutta@gmail.com",
 					Gender.MALE,
-					new Address("India", "823881A", "Sindri"),
-					List.of("Java", "SpringBoot"),
+					new Address("India", "828122", "Sindri"),
+					List.of("Kafka", "React JS", "Spring Boot", "Java"),
 					BigDecimal.TEN,
 					LocalDateTime.now()
 			);

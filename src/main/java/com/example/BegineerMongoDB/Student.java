@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@Document //we can't have a document without a id
+@Document//we can't have a document without a id
 public class Student {
     @Id
     private String id;
